@@ -13,27 +13,34 @@ API tested: [loadFileURL:allowingReadAccessToURL:](https://github.com/WebKit/web
 ## RADAR FILED
 
 Summary:
+
 When on an iOS 9 device, When including assets in your app bundle, WKWebView cannot load these assets as file URLs using the WKWebView loadFileURL:allowingReadAccessToURL:  API, they won't load.
 
 This works in the Simulator.
 
 Steps to Reproduce:
+
 1. Create a WKWebView
 2. Try to load a HTML file that is included in your app bundle
 
 Expected Results:
+
 HTML file that is in your app bundle is loaded
 
 Actual Results:
+
 HTML file that is in your app bundle is not loaded
 
 Version:
+
 iOS 9 (13A4254v)
 
 Notes:
+
 Test app provided to repro: https://github.com/wkwebview/load-fileurl-app-bundle
 
 Configuration:
+
 iPhone 5s GSM 
 
 ## EXPECTED
