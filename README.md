@@ -2,7 +2,7 @@
 
 iOS 9 test of loading a file url from the app bundle.
 
-[rdar://problem/xxxx](rdar://problem/xxxx)
+[rdar://problem/21409972](rdar://problem/21409972)
 
 This test only fails on an iOS 9 device, it always passes on a Simulator.
 This test tries to load web assets from a folder in the app bundle itself.
