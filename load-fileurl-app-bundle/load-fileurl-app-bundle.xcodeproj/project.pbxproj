@@ -15,6 +15,9 @@
 		03F987F01B30B9AC009B3501 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03F987EE1B30B9AC009B3501 /* LaunchScreen.storyboard */; };
 		03F987FB1B30B9AC009B3501 /* load_fileurl_app_bundleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F987FA1B30B9AC009B3501 /* load_fileurl_app_bundleTests.m */; };
 		03F988061B30B9AC009B3501 /* load_fileurl_app_bundleUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F988051B30B9AC009B3501 /* load_fileurl_app_bundleUITests.m */; };
+		03F988141B30C457009B3501 /* www in Resources */ = {isa = PBXBuildFile; fileRef = 03F988131B30C457009B3501 /* www */; };
+		03F988151B30C457009B3501 /* www in Resources */ = {isa = PBXBuildFile; fileRef = 03F988131B30C457009B3501 /* www */; };
+		03F988161B30C457009B3501 /* www in Resources */ = {isa = PBXBuildFile; fileRef = 03F988131B30C457009B3501 /* www */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,7 @@
 		03F988011B30B9AC009B3501 /* load-fileurl-app-bundleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "load-fileurl-app-bundleUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		03F988051B30B9AC009B3501 /* load_fileurl_app_bundleUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = load_fileurl_app_bundleUITests.m; sourceTree = "<group>"; };
 		03F988071B30B9AC009B3501 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		03F988131B30C457009B3501 /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; name = www; path = ../www; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +85,7 @@
 		03F987D41B30B9AC009B3501 = {
 			isa = PBXGroup;
 			children = (
+				03F988131B30C457009B3501 /* www */,
 				03F987DF1B30B9AC009B3501 /* load-fileurl-app-bundle */,
 				03F987F91B30B9AC009B3501 /* load-fileurl-app-bundleTests */,
 				03F988041B30B9AC009B3501 /* load-fileurl-app-bundleUITests */,
@@ -207,6 +212,7 @@
 				TargetAttributes = {
 					03F987DC1B30B9AC009B3501 = {
 						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = 78NCLZYYE3;
 					};
 					03F987F51B30B9AC009B3501 = {
 						CreatedOnToolsVersion = 7.0;
@@ -243,6 +249,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03F988141B30C457009B3501 /* www in Resources */,
 				03F987F01B30B9AC009B3501 /* LaunchScreen.storyboard in Resources */,
 				03F987ED1B30B9AC009B3501 /* Assets.xcassets in Resources */,
 				03F987EB1B30B9AC009B3501 /* Main.storyboard in Resources */,
@@ -253,6 +260,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03F988151B30C457009B3501 /* www in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +268,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03F988161B30C457009B3501 /* www in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -413,10 +422,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "load-fileurl-app-bundle/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "x.org.webkit.load-fileurl-app-bundle";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -424,10 +436,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "load-fileurl-app-bundle/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "x.org.webkit.load-fileurl-app-bundle";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

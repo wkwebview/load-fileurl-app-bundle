@@ -1,8 +1,41 @@
 body {
 	background-color: #FFFF00;
+    margin-top: 40px;
+    font-size: 40pt;
+
 }
 
 img {
-	width: 300px;
+	width: 75%;
 	height: auto;
 }
+
+#notice {
+    font-weight: bold;
+}
+
+button {
+    font-size: 40px;
+}
+
+.blink {
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-name: blink;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    75% {
+        opacity: 1;
+    }
+    76% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
